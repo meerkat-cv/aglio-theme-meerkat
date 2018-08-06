@@ -10,10 +10,10 @@ html
         style!= self.css
     body.preload
         div.topnav
-            a(href="/bar/webapp/") 
+            a(href="/{{cookiecutter.project_name}}/webapp/") 
                 i.fa.fa-arrow-left
                 span Back to app
-            p.apptitle Meerkat's Bar v0.1
+            p.apptitle Meerkat's {{cookiecutter.full_project_name}} v0.1
         #nav-background
         div.container-fluid.triple
             .row

@@ -250,10 +250,27 @@ header {
 
 nav {
     position: fixed;
-    top: @padding * 2 + 50;
+    top: 0;
+    padding-top: @padding * 2;
     bottom: 0;
     overflow-y: auto;
     padding-left: 10px;
+
+    .top-nav {
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+        
+        img {
+            width: 150px
+        }
+
+        p {
+            padding-top: 5px;
+            color: #999;
+            font-size: 14px;
+        }
+    }
 
     .resource-group {
       padding: 0;
@@ -521,7 +538,7 @@ nav {
     .inner > h5 {
         padding-left: 0;
         padding-bottom: 8px;
-        border-bottom: 1px solid #373b48;
+        border-bottom: 1px solid #091b2b;
     }
 
     pre {
@@ -616,7 +633,7 @@ nav {
 .right .example-names {
     margin-bottom: 20px;
     padding-left: 0;
-    border-bottom: 1px solid #373b48;
+    border-bottom: 1px solid #091b2b;
     background: none;
 
     .tab-button {
@@ -633,7 +650,7 @@ nav {
 #nav-background {
     position: fixed;
     left: 0;
-    top: 50;
+    // top: 50;
     bottom: 0;
     width: @nav-triple-width;
     padding-right: @padding * 1.2;
@@ -769,10 +786,10 @@ nav .resource-group{
     margin-bottom: 0;
     font-size: 14px;
     text-transform: uppercase;
-    color: #318FA9;
+    color: #498eff;
 
     &:hover {
-        color: darken(#318FA9, 10%);
+        color: darken(#498eff, 10%);
     }
   }
 
@@ -862,7 +879,7 @@ nav .resource-group{
 
     dt {
         overflow: initial;
-        width: 90px;
+        width: 150px;
         text-align: left;
         text-overflow: initial;
         white-space: initial;

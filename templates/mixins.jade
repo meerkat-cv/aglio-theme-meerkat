@@ -23,6 +23,10 @@ mixin Nav()
     //- Draw a navigation bar, which includes links to individual
     //- resources and actions.
     nav
+        .top-nav 
+            a(href="/{{cookiecutter.project_name}}/webapp/")
+                img(src="images/meerkat_logo.png")
+            p Cebola pirata API
         if self.api.navItems && self.api.navItems.length
             .resource-group
                 .heading

@@ -26,7 +26,7 @@ mixin Nav()
         .top-nav 
             a(href="/{{cookiecutter.project_name}}/webapp/")
                 img(src="images/meerkat_logo.png")
-            p Cebola pirata API
+            p {{cookiecutter.project_name}} API
         if self.api.navItems && self.api.navItems.length
             .resource-group
                 .heading
